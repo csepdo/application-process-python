@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div id="contact">
+    {% for info in contact %}
+    {{ info.first_name + " " + info.last_name + ": " + info.phone_number}}<br/>
+    {% endfor%}
+</div>
+
+{% include 'footer.html' %}
+{% endblock %}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Application process</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+<div class="content-wrapper">
+        <h1> Application Process </h1>
+    <div class="selector">
+        <a href="{{ url_for('mentor_names') }}"><button>Mentor names</button></a>
+        <a href="{{ url_for('mentor_nicknames') }}"><button>Mentor nicknames from Miskolc</button></a>
+        <a href="{{ url_for('contact_of_carol') }}"><button>Contact information of Carol</button></a>
+        <a href="{{ url_for('contact_of_hat_owner') }}"><button>Contact information of hat owner</button></a>
+        <a href="{{ url_for('add_new_applicant') }}"><button>Add new applicant to the database</button></a>
+        <a href="{{ url_for('update_phone_number') }}"><button>Update phone number</button></a>
+    </div>
+    {% block content %} {% endblock %}
+</div>
+</body>
+</html>
+
+
+

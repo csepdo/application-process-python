@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div id="new_data">
+    {% for data in datas %}
+        <p> First Name: {{ data.first_name }}</p>
+        <p> Last Name: {{ data.last_name }}</p>
+        <p> Phone number: {{ data.phone_number }}</p>
+        <p> Email: {{ data.email }}</p>
+        <p> Application Code: {{ data.application_code }}</p>
+    {% endfor%}
+</div>
+
+{% include 'footer.html' %}
+{% endblock %}

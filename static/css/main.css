@@ -1,0 +1,48 @@
+/*
+body, h1, footer
+id selector
+few class selectors
+selector with selects tags inside another tag
+selector with changes different elements at once (comma separated)
+
+font-family, color, background-color, text-align
+padding, margin, width, height, top, left
+display, position
+ */
+body {
+    background-color: lightseagreen;
+    color: darkslategrey;
+    text-shadow: 2px 2px 5px;
+    padding: 5px 10px 5px 10px;
+}
+h1 {
+    background-color: cadetblue;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+}
+button {
+    background-color: cadetblue;
+    padding: 5px 10px 5px 10px;
+    margin: 5px 10px 5px 10px;
+    border-radius: 25px;
+    transition-duration: 0.5s;
+}
+button:hover {
+    background-color: darkslategrey;
+    color: beige;
+
+}
+footer {
+    margin: 50px 10px 5px 10px;
+}
+
+div {
+
+}
+.content-wrapper {
+    padding: 5%;
+}
+.selector {
+    margin-bottom: 50px;
+}
